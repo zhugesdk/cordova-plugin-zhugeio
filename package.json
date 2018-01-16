@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-zhugeio",
+  "version": "1.2.2",
+  "description": "Cordova Plugin For Zhugeio Mobile Analysis",
+  "cordova": {
+    "id": "cordova-plugin-zhugeio",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhugesdk/cordova-plugin-zhugeio.git"
+  },
+  "keywords": [
+    "cordova",
+    "Zhugeio",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Jiaokang",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/zhugesdk/cordova-plugin-zhugeio/issues"
+  },
+  "homepage": "https://github.com/zhugesdk/cordova-plugin-zhugeio"
+}

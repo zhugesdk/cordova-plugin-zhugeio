@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-zhugeio" version="1.0.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <name>Zhugeio</name>
+  <description>Cordova Zhugeio Mobile Analysis Plugin</description>
+  <author>jiaokang@zhugeio.com</author>>
+  <keywords>cordova,zhugeio,mobile,analysis</keywords>
+  <license>Apache 2.0 License</license>
+
+  <js-module src="www/zhugecordova.js" name="Zhugeio">
+        <clobbers target="Zhugeio"/>
+  </js-module>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Zhugeio">
+        <param name="ios-package" value="CDVZhugeio"/>
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVZhugeio.h"/>
+    <source-file src="src/ios/CDVZhugeio.m"/>
+  </platform>
+
+  <platform name="android">
+    <preference name="APP_KEY"/>
+    <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+    <config-file target="config.xml" parent="/*">
+      <feature name="Zhugeio">
+        <param name="android-package" value="com.zhuge.analysis.stat.Zhugeio"/>
+        <param name="onload" value="true"/>
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <meta-data
+            android:name="ZHUGE_APPKEY"
+            android:value="$APP_KEY" />
+        <meta-data
+            android:name="ZHUGE_CHANNEL"
+            android:value="cordova" />
+    </config-file>
+
+    <source-file src="src/android/Zhugeio.java"
+        target-dir="src/com/zhuge/analysis/stat"/>
+  </platform>
+
+</plugin>
