@@ -1,7 +1,0 @@
-repositories {
-    jcenter()
-}
-
-dependencies {
-    compile 'com.zhuge.analysis:zhugeio:latest.integration'
-}

@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-zhugeio",
-  "version": "1.2.2",
+  "version": "1.0.0",
   "description": "Cordova Plugin For Zhugeio Mobile Analysis",
   "cordova": {
     "id": "cordova-plugin-zhugeio",
@@ -14,9 +14,9 @@
     "url": "git+https://github.com/zhugesdk/cordova-plugin-zhugeio.git"
   },
   "keywords": [
+    "ecosystem:cordova",
     "cordova",
     "Zhugeio",
-    "ecosystem:cordova",
     "cordova-ios",
     "cordova-android"
   ],

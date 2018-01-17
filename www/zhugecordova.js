@@ -2,7 +2,7 @@ var exec = require("cordova/exec");
 
 
 var errorHandle = function(error) {
-	console.log(error);
+    console.log(error);
 }
 
 
@@ -29,10 +29,10 @@ module.exports = {
     },
 
     openLog: function() {
-        exec(null, errorHandle, "BaiduMobStat", "openLog", []);
+        exec(null, errorHandle, "Zhugeio", "openLog", []);
     },
 
     openDebug: function() {
-        exec(null, errorHandle, "BaiduMobStat", "openDebug", []);
+        exec(null, errorHandle, "Zhugeio", "openDebug", []);
     }
 }
