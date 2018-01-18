@@ -20,8 +20,8 @@ module.exports = {
         exec(null, errorHandle, "Zhugeio", "endTrack", [eventName, eventProp]);
     },
 
-    identify: function(eventName, eventProp, attributes) {
-        exec(null, errorHandle, "Zhugeio", "identify", [eventName, eventProp, attributes]);
+    identify: function(uid, userProp) {
+        exec(null, errorHandle, "Zhugeio", "identify", [uid, userProp]);
     },
 
     setUploadURL: function(url, backupURL) {

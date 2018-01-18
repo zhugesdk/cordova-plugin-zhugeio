@@ -13,6 +13,7 @@ import org.json.JSONObject;
 public class Zhugeio extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext){
+        Log.i("CordovaZhuge","execute with "+action+" , args is "+args.toString());
         if (TextUtils.isEmpty(action)){
             callbackContext.error("action is empty, error.");
             return false;
@@ -60,7 +61,7 @@ public class Zhugeio extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
         // your init code here
-        Log.e("Cordova","zhugeio init");
+        Log.e("CordovaZhuge","zhugeio init");
         ZhugeSDK.getInstance().init(cordova.getContext());
     }
 }

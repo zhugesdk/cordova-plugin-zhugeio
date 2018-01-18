@@ -16,7 +16,7 @@
   <preference name="ZHUGE_APP_KEY"/>
 
   <platform name="ios">
-    <framework src="Zhugeio" type="podspec" spec="~> 3.1.0" />
+    <pod name="Zhugeio"/>
     <config-file target="config.xml" parent="/*">
       <feature name="Zhugeio">
         <param name="ios-package" value="CDVZhugeio"/>
