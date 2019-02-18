@@ -22,7 +22,7 @@ cordova platform add ios android
 * 添加Zhuge Cordova插件，并添加ZHUGE_APP_KEY
 
 ```
-cordova plugin add cordova-plugin-zhugeio --save -variable ZHUGE_APP_KEY="填写Zhuge分配给您的AppKey"
+cordova plugin add cordova-plugin-zhugeio --save --variable ZHUGE_APP_KEY="填写Zhuge分配给您的AppKey"
 
 ```
 
